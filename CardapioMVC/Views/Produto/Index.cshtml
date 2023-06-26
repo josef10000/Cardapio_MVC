@@ -1,0 +1,36 @@
+﻿@using CardapioMVC.Controllers;
+@model IEnumerable<ProdutoModel>
+
+<table class="table table-dark table-hover">
+    <thead>
+        <tr>
+            <th scope="col">Produtos</th>
+            <th scope="col">Preço</th>
+            <th scope="col">Kilos</th>
+
+           
+        </tr>
+    </thead>
+    <tbody>
+
+
+        @if (Model != null)
+        {
+            foreach (var produtos in Model)
+            {
+                <tr>
+                    <th scope="row">@produtos.Nome</th>
+                    <td>@produtos.Valor</td>
+                    <td>@produtos.Kilos</td>
+
+                </tr>
+            }
+        }
+
+
+
+
+      
+      
+    </tbody>
+</table>
