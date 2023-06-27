@@ -16,7 +16,7 @@ namespace CardapioMVC.Controllers
             _db = context;
         }
 
-        // GET: Prato
+        // GET: Prato...
         public async Task<IActionResult> Index()
         {
             var pratos = await _db.Pratos.ToListAsync();
