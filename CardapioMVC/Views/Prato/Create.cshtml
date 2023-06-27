@@ -14,11 +14,11 @@
 
     <h2>Itens do Prato</h2>
 
-    @foreach (var produto in ViewBag.Produtos)
+    @foreach (var item in Model.Itens)
     {
         <div class="form-group">
-            <label for="@produto.Id">@produto.Nome</label>
-            <input type="number" class="form-control" id="@produto.Id" name="Itens[@produto.Id].Quantidade" required>
+            <label for="item-@item.ProdutoId">@item.ProdutoNome</label>
+            <input type="number" class="form-control" id="item-@item.ProdutoId" name="Itens[@item.ProdutoId].Quantidade" required>
         </div>
     }
 

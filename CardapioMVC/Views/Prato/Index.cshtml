@@ -1,5 +1,4 @@
-﻿@using CardapioMVC.Controllers;
-@model IEnumerable<Prato_Model>
+﻿@model IEnumerable<Prato_Model>
 
 @{
     ViewData["Title"] = "Lista de Pratos";
@@ -16,7 +15,6 @@
                 <th>Itens</th>
                 <th>Custo Total</th>
                 <th>Porcentagem de Lucro</th>
-                <th>Ações</th>
             </tr>
         </thead>
         <tbody>
@@ -28,16 +26,12 @@
                         <ul>
                             @foreach (var item in prato.Itens)
                             {
-                                <li>@item.Quantidade gramas de @item.ProdutoNome</li>
+                                <li>@item.QuantidadeGramas gramas de @item.ProdutoNome</li>
                             }
                         </ul>
                     </td>
                     <td>@prato.CustoTotal</td>
                     <td>@prato.PorcentagemLucro%</td>
-                    <td>
-                        <a href="@Url.Action("Editar", new { id = prato.Id })" class="btn btn-primary">Editar</a>
-                        <a href="@Url.Action("Excluir", new { id = prato.Id })" class="btn btn-danger">Excluir</a>
-                    </td>
                 </tr>
             }
         </tbody>
@@ -47,7 +41,3 @@ else
 {
     <p>Nenhum prato encontrado.</p>
 }
-
-<div>
-    <a href="@Url.Action("CriarPratos")" class="btn btn-success">Criar Pratos</a>
-</div>
