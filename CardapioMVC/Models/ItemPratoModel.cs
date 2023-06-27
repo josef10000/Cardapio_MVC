@@ -2,9 +2,12 @@
 {
     public class ItemPratoModel
     {
-        public int Id { get; set; }
-
-        public ProdutoModel Produto { get; set; }
+        public int ProdutoId { get; set; }
+        public string ProdutoNome { get; set; }
+        public double QuantidadeGramas { get; set; }
         public int Quantidade { get; set; }
+
+        public int PratoId { get; set; } // Chave estrangeira
+        public Prato_Model Prato { get; set; } // Propriedade de navegação
     }
 }

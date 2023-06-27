@@ -1,0 +1,31 @@
+﻿@model Prato_Model
+
+@{
+    ViewData["Title"] = "Criar Prato";
+}
+
+<h1>Criar Prato</h1>
+
+<form method="post" asp-controller="Prato" asp-action="Create">
+    <div class="form-group">
+        <label for="nome">Nome do Prato:</label>
+        <input type="text" class="form-control" id="nome" name="Nome" required>
+    </div>
+
+    <h2>Itens do Prato</h2>
+
+    @foreach (var produto in ViewBag.Produtos)
+    {
+        <div class="form-group">
+            <label for="@produto.Id">@produto.Nome</label>
+            <input type="number" class="form-control" id="@produto.Id" name="Itens[@produto.Id].Quantidade" required>
+        </div>
+    }
+
+    <div class="form-group">
+        <label for="porcentagemLucro">Porcentagem de Lucro:</label>
+        <input type="number" class="form-control" id="porcentagemLucro" name="PorcentagemLucro" required>
+    </div>
+
+    <button type="submit" class="btn btn-primary">Criar Prato</button>
+</form>

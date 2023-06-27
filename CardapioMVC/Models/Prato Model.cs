@@ -1,4 +1,9 @@
-﻿namespace CardapioMVC.Models
+﻿
+
+using System.Collections.Generic;
+
+
+namespace CardapioMVC.Models
 {
     public class Prato_Model
     {

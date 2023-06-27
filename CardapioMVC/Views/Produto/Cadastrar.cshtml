@@ -1,0 +1,50 @@
+﻿
+@model ProdutoModel
+@{
+    ViewData["Title"] = "Cadastrar Prooduto";
+}
+
+
+
+<div class="container bg-dark p-5 roundes-5">
+
+    <div class="mb-5 text-center">
+        <h1 class=" text-light"> Cadastro de Produtos</h1>
+
+
+    </div>
+    
+    <form method="post" asp-controller="Produto" asp-action="Cadastrar">
+    <div class="mb-3">
+            <label for="Produto" class="form-label text-light">Produto</label>
+        <input type="text" class="form-control"  asp-for="Nome"    id="Produto" placeholder="Qual é o produto">
+            <span class="text-danger"  asp-validation-for="Nome"> </span>
+
+    </div>
+
+
+
+        <div class="mb-3">
+            <label for="Preço" class="form-label text-light">Preço</label>
+            <input type="number" class="form-control" asp-for="Valor"  id="Preço" placeholder="Quanto pagou">
+            <span class="text-danger" asp-validation-for="Valor"> </span>
+
+        </div>
+
+
+
+        <div class="mb-3">
+            <label for="Peso" class="form-label text-light">Peso</label>
+            <input type="number" step="0.01" class="form-control" asp-for="Kilos" id="Peso" placeholder="Informe o peso em quilos">
+            <span class="text-danger"  asp-validation-for="Kilos"> </span>
+
+        </div>
+
+        <div class="d-flex gap-5 mt-5">
+            <button type="submit" class="btn btn-success">Adicionart</button>
+            <a class=" btn btn-primary  w-50" asp-controller="Produto" asp-action="Index">Voltar</a>
+
+        </div>
+    </form>
+
+</div>

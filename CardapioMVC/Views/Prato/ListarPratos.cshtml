@@ -1,0 +1,44 @@
+﻿@model IEnumerable<Prato_Model>
+
+@{
+    ViewData["Title"] = "Lista de Pratos";
+}
+
+<h1>Lista de Pratos</h1>
+
+@if (Model != null && Model.Any())
+{
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Nome</th>
+                <th>Itens</th>
+                <th>Custo Total</th>
+                <th>Porcentagem de Lucro</th>
+                <th>Valor Total</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var prato in Model)
+            {
+                <tr>
+                    <td>@prato.Nome</td>
+                    <td>
+                        <ul>
+                            @foreach (var item in prato.Itens)
+                            {
+                                <li>@item.Quantidade gramas de @item.ProdutoNome</li>
+                            }
+                        </ul>
+                    </td>
+                    <td>@prato.CustoTotal</td>
+                    <td>@prato.PorcentagemLucro%</td>
+                </tr>
+            }
+        </tbody>
+    </table>
+}
+else
+{
+    <p>Nenhum prato encontrado.</p>
+}
