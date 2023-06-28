@@ -46,6 +46,14 @@
         "net7.0": {
           "targetAlias": "net7.0",
           "dependencies": {
+            "DocumentFormat.OpenXml": {
+              "target": "Package",
+              "version": "[2.20.0, )"
+            },
+            "DocumentFormat.OpenXmlSDK": {
+              "target": "Package",
+              "version": "[2.0.0, )"
+            },
             "Microsoft.EntityFrameworkCore": {
               "target": "Package",
               "version": "[7.0.8, )"

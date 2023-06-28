@@ -1,4 +1,4 @@
-﻿@model Prato_Model
+﻿@model IEnumerable<Prato_Model>;
 
 @{
     ViewData["Title"] = "Criar Prato";
@@ -13,15 +13,16 @@
     </div>
 
     <h2>Itens do Prato</h2>
-
-    @foreach (var item in Model.Itens)
+    @foreach (var ite in Model)
     {
-        <div class="form-group">
-            <label for="item-@item.ProdutoId">@item.ProdutoNome</label>
-            <input type="number" class="form-control" id="item-@item.ProdutoId" name="Itens[@item.ProdutoId].Quantidade" required>
-        </div>
+        @foreach (var item in ite.Itens)
+        {
+            <div class="form-group">
+                <label for="item-@item"></label>
+                <input type="number" class="form-control" id="item-@item.ProdutoId" name="Itens[@item.ProdutoId].Quantidade" required>
+            </div>
+        }
     }
-
     <div class="form-group">
         <label for="porcentagemLucro">Porcentagem de Lucro:</label>
         <input type="number" class="form-control" id="porcentagemLucro" name="PorcentagemLucro" required>

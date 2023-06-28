@@ -73,3 +73,5 @@ C:\Users\Frazão\Desktop\Projeto final\CardapioMVC\CardapioMVC\obj\Debug\net7.0\
 C:\Users\Frazão\Desktop\Projeto final\CardapioMVC\CardapioMVC\obj\Debug\net7.0\CardapioMVC.pdb
 C:\Users\Frazão\Desktop\Projeto final\CardapioMVC\CardapioMVC\obj\Debug\net7.0\CardapioMVC.genruntimeconfig.cache
 C:\Users\Frazão\Desktop\Projeto final\CardapioMVC\CardapioMVC\obj\Debug\net7.0\ref\CardapioMVC.dll
+C:\Users\Frazão\Desktop\Projeto final\CardapioMVC\CardapioMVC\bin\Debug\net7.0\DocumentFormat.OpenXml.dll
+C:\Users\Frazão\Desktop\Projeto final\CardapioMVC\CardapioMVC\bin\Debug\net7.0\System.IO.Packaging.dll

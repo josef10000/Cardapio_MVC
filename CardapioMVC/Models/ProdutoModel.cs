@@ -15,7 +15,7 @@ namespace CardapioMVC.Models
 
         [Required(ErrorMessage = "Digite o peso do produto")]
 
-        public required string Kilos { get; set; }
+        public string Kilos { get; set; }
 
 
 

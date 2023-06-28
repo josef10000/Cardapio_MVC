@@ -30,8 +30,8 @@
                             }
                         </ul>
                     </td>
-                    <td>@prato.CustoTotal</td>
-                    <td>@prato.PorcentagemLucro%</td>
+                    <td>@prato.CustoTotal.ToString("C2")</td>
+                    <td>@prato.PorcentagemLucro.ToString("N2")%</td>
                 </tr>
             }
         </tbody>
@@ -41,3 +41,8 @@ else
 {
     <p>Nenhum prato encontrado.</p>
 }
+
+<script>
+    // Código JavaScript aqui
+    // Você pode adicionar suas lógicas e interações com a tabela aqui
+</script>
