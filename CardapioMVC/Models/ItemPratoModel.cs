@@ -8,6 +8,5 @@
         public int Quantidade { get; set; }
 
         public int PratoId { get; set; } // Chave estrangeira
-        public Prato_Model Prato { get; set; } // Propriedade de navegação
     }
 }

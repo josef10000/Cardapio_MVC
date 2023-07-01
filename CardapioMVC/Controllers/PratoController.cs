@@ -2,7 +2,7 @@
 
 namespace CardapioMVC.Controllers
 {
-    public class Tela : Controller
+    public class PratoController : Controller
     {
         public IActionResult Index()
         {

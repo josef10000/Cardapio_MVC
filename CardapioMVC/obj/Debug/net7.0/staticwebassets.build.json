@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "bto/RYGhrG7Hxu/+ntV9WMRTN+iGGwrlMOXhgy/gVps=",
+  "Hash": "NYFPnnJuq/+eaH31fLhFhdlZ/oEMaOLcg9W3gtp3oOE=",
   "Source": "CardapioMVC",
   "BasePath": "_content/CardapioMVC",
   "Mode": "Default",
@@ -49,6 +49,40 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "C:\\Users\\Frazão\\Desktop\\Projeto final\\CardapioMVC\\CardapioMVC\\obj\\Debug\\net7.0\\scopedcss\\projectbundle\\CardapioMVC.bundle.scp.css"
+    },
+    {
+      "Identity": "C:\\Users\\Frazão\\Desktop\\Projeto final\\CardapioMVC\\CardapioMVC\\wwwroot\\css\\bootstrap.css",
+      "SourceId": "CardapioMVC",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Frazão\\Desktop\\Projeto final\\CardapioMVC\\CardapioMVC\\wwwroot\\",
+      "BasePath": "_content/CardapioMVC",
+      "RelativePath": "css/bootstrap.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\bootstrap.css"
+    },
+    {
+      "Identity": "C:\\Users\\Frazão\\Desktop\\Projeto final\\CardapioMVC\\CardapioMVC\\wwwroot\\css\\lumen.css",
+      "SourceId": "CardapioMVC",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Frazão\\Desktop\\Projeto final\\CardapioMVC\\CardapioMVC\\wwwroot\\",
+      "BasePath": "_content/CardapioMVC",
+      "RelativePath": "css/lumen.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\lumen.css"
     },
     {
       "Identity": "C:\\Users\\Frazão\\Desktop\\Projeto final\\CardapioMVC\\CardapioMVC\\wwwroot\\css\\site.css",

@@ -4,9 +4,6 @@ using Microsoft.AspNetCore.Mvc;
 using DocumentFormat.OpenXml;
 using DocumentFormat.OpenXml.Packaging;
 using DocumentFormat.OpenXml.Spreadsheet;
-using System.Collections.Generic;
-using System.IO;
-using System.Linq;
 
 namespace CardapioMVC.Controllers
 {
@@ -171,3 +168,5 @@ namespace CardapioMVC.Controllers
         }
     }
 }
+
+

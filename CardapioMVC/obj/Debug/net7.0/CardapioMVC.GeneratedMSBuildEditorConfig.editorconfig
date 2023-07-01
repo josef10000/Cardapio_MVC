@@ -16,20 +16,16 @@ build_property.GenerateRazorMetadataSourceChecksumAttributes =
 build_property.MSBuildProjectDirectory = C:\Users\Frazão\Desktop\Projeto final\CardapioMVC\CardapioMVC
 build_property._RazorSourceGeneratorDebug = 
 
+[C:/Users/Frazão/Desktop/Projeto final/CardapioMVC/CardapioMVC/Views/Calorias/Calorias.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2Fsb3JpYXNcQ2Fsb3JpYXMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/Frazão/Desktop/Projeto final/CardapioMVC/CardapioMVC/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/Frazão/Desktop/Projeto final/CardapioMVC/CardapioMVC/Views/Home/Privacy.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
-build_metadata.AdditionalFiles.CssScope = 
-
-[C:/Users/Frazão/Desktop/Projeto final/CardapioMVC/CardapioMVC/Views/Prato/Create.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJhdG9cQ3JlYXRlLmNzaHRtbA==
-build_metadata.AdditionalFiles.CssScope = 
-
-[C:/Users/Frazão/Desktop/Projeto final/CardapioMVC/CardapioMVC/Views/Prato/Details.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJhdG9cRGV0YWlscy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/Frazão/Desktop/Projeto final/CardapioMVC/CardapioMVC/Views/Prato/Index.cshtml]

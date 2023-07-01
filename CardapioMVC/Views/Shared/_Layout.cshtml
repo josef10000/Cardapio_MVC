@@ -5,54 +5,80 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>@ViewData["Title"] - CardapioMVC</title>
     <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
-    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/css/lumen.css" asp-append-version="true" />
     <link rel="stylesheet" href="~/CardapioMVC.styles.css" asp-append-version="true" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <link href="https://cdn.datatables.net/v/dt/dt-1.13.4/datatables.min.css" rel="stylesheet" />
+
+    <style>
+        .sidebar {
+            position: fixed;
+            top: 0;
+            left: 0;
+            height: 100%;
+            width: 200px;
+            background-color: #f8f9fa;
+            padding: 20px;
+        }
+
+            .sidebar .nav-link {
+                display: block;
+                margin-bottom: 10px;
+                transition: all 0.3s ease;
+            }
+
+                .sidebar .nav-link:hover {
+                    text-decoration: none;
+                    background-color: #007bff;
+                    color: #fff;
+                    transform: scale(1.1);
+                }
+
+        .content {
+            margin-left: 200px;
+            padding: 20px;
+        }
+    </style>
 </head>
 <body>
-    <header>
-        <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
-            <div class="container-fluid">
-                <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index">CardapioMVC</a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".navbar-collapse" aria-controls="navbarSupportedContent"
-                        aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
-                    <ul class="navbar-nav flex-grow-1">
-                        <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Index">Home</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Produto" asp-action="Index">Produto</a>
-                        </li>
-                       
-                   
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Prato" asp-action="index">Lista</a>
-                        </li>
+    <div class="sidebar">
+        <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Index"> <i class="bi bi-house-fill"></i>Home</a>
+        <a class="nav-link text-dark" asp-area="" asp-controller="Produto" asp-action="Index"> <i class="bi bi-clipboard2-minus-fill"></i>Produtinho</a>
+        <a class="nav-link text-dark" asp-area="" asp-controller="Prato" asp-action="Index"> <i class="bi bi-clipboard2-minus-fill"></i>Vai dar certo agora</a>
+        <a class="nav-link text-dark" asp-area="" asp-controller="Calorias" asp-action="Calorias"> <i class="bi bi-clipboard2-minus-fill"></i>API</a>
 
-                        <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Prato" asp-action="Create">Criar Pratos</a>
-                        <li class="nav-item">
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </nav>
-    </header>
-    <div class="container">
+     
+
+    </div>
+
+    <div class="content">
         <main role="main" class="pb-3">
             @RenderBody()
         </main>
+
+        <footer class="border-top footer text-muted">
+            <div class="container">
+                &copy; 2023 - CardapioMVC - <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
+            </div>
+        </footer>
     </div>
 
-    <footer class="border-top footer text-muted">
-        <div class="container">
-            &copy; 2023 - CardapioMVC - <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
-        </div>
-    </footer>
     <script src="~/lib/jquery/dist/jquery.min.js"></script>
     <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
     <script src="~/js/site.js" asp-append-version="true"></script>
+    <script src="https://cdn.datatables.net/v/dt/dt-1.13.4/datatables.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('.sidebar .nav-link').hover(
+                function () {
+                    $(this).addClass('active');
+                },
+                function () {
+                    $(this).removeClass('active');
+                }
+            );
+        });
+    </script>
     @await RenderSectionAsync("Scripts", required: false)
 </body>
 </html>

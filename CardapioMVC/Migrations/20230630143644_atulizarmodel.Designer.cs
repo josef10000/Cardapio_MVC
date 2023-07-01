@@ -4,6 +4,7 @@ using CardapioMVC.Data;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 #nullable disable
@@ -11,9 +12,11 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace CardapioMVC.Migrations
 {
     [DbContext(typeof(ApplicationDBContenx))]
-    partial class ApplicationDBContenxModelSnapshot : ModelSnapshot
+    [Migration("20230630143644_atulizarmodel")]
+    partial class atulizarmodel
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -42,7 +45,32 @@ namespace CardapioMVC.Migrations
 
                     b.HasKey("ProdutoId", "PratoId");
 
+                    b.HasIndex("PratoId");
+
                     b.ToTable("Items");
+                });
+
+            modelBuilder.Entity("CardapioMVC.Models.Prato_Model", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+
+                    b.Property<double>("CustoTotal")
+                        .HasColumnType("float");
+
+                    b.Property<string>("Nome")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<double>("PorcentagemLucro")
+                        .HasColumnType("float");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("Pratos");
                 });
 
             modelBuilder.Entity("CardapioMVC.Models.ProdutoModel", b =>
@@ -53,9 +81,6 @@ namespace CardapioMVC.Migrations
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
 
-                    b.Property<DateTime>("DataAlteracaoPreco")
-                        .HasColumnType("datetime2");
-
                     b.Property<string>("Kilos")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
@@ -64,13 +89,43 @@ namespace CardapioMVC.Migrations
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
+                    b.Property<int?>("Prato_ModelId")
+                        .HasColumnType("int");
+
                     b.Property<double?>("Valor")
                         .IsRequired()
                         .HasColumnType("float");
 
                     b.HasKey("Id");
 
+                    b.HasIndex("Prato_ModelId");
+
                     b.ToTable("Produtos");
+                });
+
+            modelBuilder.Entity("CardapioMVC.Models.ItemPratoModel", b =>
+                {
+                    b.HasOne("CardapioMVC.Models.Prato_Model", "Prato")
+                        .WithMany("Itens")
+                        .HasForeignKey("PratoId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("Prato");
+                });
+
+            modelBuilder.Entity("CardapioMVC.Models.ProdutoModel", b =>
+                {
+                    b.HasOne("CardapioMVC.Models.Prato_Model", null)
+                        .WithMany("Produtos")
+                        .HasForeignKey("Prato_ModelId");
+                });
+
+            modelBuilder.Entity("CardapioMVC.Models.Prato_Model", b =>
+                {
+                    b.Navigation("Itens");
+
+                    b.Navigation("Produtos");
                 });
 #pragma warning restore 612, 618
         }

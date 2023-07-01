@@ -1,0 +1,20 @@
+﻿@model List<CardapioMVC.Models.CaloriasModel>
+
+<h1>Calorias dos Alimentos</h1>
+
+<form method="post" asp-action="ObterCalorias">
+    <input type="text" name="descricao" placeholder="Digite o nome do produto">
+    <button type="submit">Buscar</button>
+</form>
+
+@if (Model != null)
+{
+    foreach (var alimento in Model)
+    {
+        <div>
+            <h3>@alimento.Descricao</h3>
+            <p>Quantidade: @alimento.Quantidade</p>
+            <p>Calorias: @alimento.Calorias</p>
+        </div>
+    }
+}
