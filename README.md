@@ -1,10 +1,8 @@
-﻿# Projeto Final Academia .Net Atos
+﻿# Projeto Final Academia .Net Atos <h1>
 
-# Sistema de Controle de Produtos e Consumo de Calorias
+# Sistema de Controle de Produtos e Consumo de Calorias  <h2>
 
- Sistema de Controle de Produtos e Consumo de Calorias
 Este projeto é um sistema desenvolvido em MVC, utilizando JavaScript, Bootstrap, SQL Server EF e jQuery. O sistema possui as seguintes funcionalidades:
-
 Cadastro, Edição e Exclusão de Produtos
 O sistema permite cadastrar produtos informando seu peso e valor correspondente a esse peso.
 É possível editar e excluir os produtos cadastrados.
@@ -25,34 +23,34 @@ O usuário pode inserir o nome de um produto insumo e a API retorna outros prato
 
 # Tecnologias Utilizadas
 
-C#: Linguagem de programação utilizada para o desenvolvimento do sistema.
-ASP.NET Core MVC: Framework utilizado para a criação da aplicação web.
-Entity Framework Core: Framework de mapeamento objeto-relacional utilizado para a interação com o banco de dados SQL Server.
-JavaScript: Utilizado para adicionar interatividade e funcionalidades ao sistema.
-Bootstrap: Framework de front-end utilizado para o desenvolvimento de uma interface responsiva e estilizada.
-SQL Server: Banco de dados utilizado para armazenar os dados dos produtos e demais informações do sistema.
-jQuery: Biblioteca JavaScript utilizada para simplificar a manipulação do DOM e a comunicação com o servidor.
-API Externa: O sistema consome uma API externa para obter informações sobre pratos feitos com um determinado insumo e suas respectivas quantidades de calorias.
+* C# 
+* ASP.NET Core MVC 
+* Entity Framework Core 
+* JavaScript 
+* Bootstrap 
+* SQL Server 
+* jQuery 
+* API Externa  ([API](https://caloriasporalimentoapi.herokuapp.com/)).
 
 # Como Executar o Projeto
 
-Certifique-se de ter o .NET Core SDK e o SQL Server instalados em sua máquina.
-Clone o repositório do projeto para sua máquina.
-Configure a string de conexão com o banco de dados SQL Server no arquivo de configuração do projeto.
-Abra o projeto em uma IDE ou editor de código de sua preferência.
-Execute as migrações do Entity Framework para criar o banco de dados e as tabelas necessárias.
-Compile e execute o projeto.
-Acesse o sistema através do navegador.
+1. Certifique-se de ter o .NET Core SDK e o SQL Server instalados em sua máquina.
+2. Clone o repositório do projeto para sua máquina.
+3. Configure a string de conexão com o banco de dados SQL Server no arquivo de configuração do projeto.
+4. Abra o projeto em uma IDE ou editor de código de sua preferência.
+5. Execute as migrações do Entity Framework para criar o banco de dados e as tabelas necessárias.
+6. Compile e execute o projeto.
+7. Acesse o sistema através do navegador.
 
 # Contribuições
 
 Contribuições para o projeto são bem-vindas. Caso queira contribuir, siga as etapas abaixo:
 
-Faça um fork do repositório.
-Crie um branch para a sua feature ou correção.
-Realize as alterações necessárias.
-Faça commit das suas alterações.
-Envie um pull request para o repositório original.
+1. Faça um fork do repositório.
+2. Crie um branch para a sua feature ou correção.
+3. Realize as alterações necessárias.
+4. Faça commit das suas alterações.
+5. Envie um pull request para o repositório original.
 
 
 # Contato
