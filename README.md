@@ -1,4 +1,6 @@
-﻿# Projeto_MVC_Final
+﻿# Projeto Final Academia .Net Atos
+
+# Sistema de Controle de Produtos e Consumo de Calorias
 
  Sistema de Controle de Produtos e Consumo de Calorias
 Este projeto é um sistema desenvolvido em MVC, utilizando JavaScript, Bootstrap, SQL Server EF e jQuery. O sistema possui as seguintes funcionalidades:
