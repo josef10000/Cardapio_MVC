@@ -52,6 +52,14 @@ Contribuições para o projeto são bem-vindas. Caso queira contribuir, siga as 
 4. Faça commit das suas alterações.
 5. Envie um pull request para o repositório original.
 
+ # imagens
+![API](https://github.com/josef10000/Cardapio_MVC/assets/102549534/54f89cb1-2165-4e93-88d7-41928e3e15e0)
+![cadastrar](https://github.com/josef10000/Cardapio_MVC/assets/102549534/ac15a66c-c909-4c7b-8db2-850c265cc812)
+![AbaProdutos](https://github.com/josef10000/Cardapio_MVC/assets/102549534/03578209-4129-4e74-ab66-4401ad3a1fe3)
+![home](https://github.com/josef10000/Cardapio_MVC/assets/102549534/10cf76dd-48f6-4ce4-a3ab-3506b1beb0c2)
+
+ 
+
 
 # Contato
 
