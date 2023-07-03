@@ -9,6 +9,10 @@
       "PackagePath": "staticwebassets\\css\\bootstrap.css"
     },
     {
+      "Id": "C:\\Users\\Frazão\\Desktop\\Projeto final\\CardapioMVC\\CardapioMVC\\wwwroot\\css\\botoes.css",
+      "PackagePath": "staticwebassets\\css\\botoes.css"
+    },
+    {
       "Id": "C:\\Users\\Frazão\\Desktop\\Projeto final\\CardapioMVC\\CardapioMVC\\wwwroot\\css\\lumen.css",
       "PackagePath": "staticwebassets\\css\\lumen.css"
     },
@@ -19,6 +23,10 @@
     {
       "Id": "C:\\Users\\Frazão\\Desktop\\Projeto final\\CardapioMVC\\CardapioMVC\\wwwroot\\favicon.ico",
       "PackagePath": "staticwebassets\\favicon.ico"
+    },
+    {
+      "Id": "C:\\Users\\Frazão\\Desktop\\Projeto final\\CardapioMVC\\CardapioMVC\\wwwroot\\img\\destaque-quanto-custa.jpg",
+      "PackagePath": "staticwebassets\\img\\destaque-quanto-custa.jpg"
     },
     {
       "Id": "C:\\Users\\Frazão\\Desktop\\Projeto final\\CardapioMVC\\CardapioMVC\\wwwroot\\js\\site.js",

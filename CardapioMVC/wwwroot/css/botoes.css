@@ -1,0 +1,24 @@
+﻿@model IEnumerable<ProdutoModel> <h1>Lista de Produtos</h1> <table class="table"> <thead> <tr> <th>ID</th> <th>Nome</th> <th>Valor</th> <th></th> </tr> </thead> <tbody> @foreach (var produto in Model) {
+    <tr> <td>@produto.Id</td> <td>@produto.Nome</td> <td>@produto.Valor</td> <td> <a href="@Url.Action("Editar", new { id = produto.Id })" class="btn btn-primary">Editar</a> <a href="@Url.Action("Excluir", new { id = produto.Id })" class="btn btn-danger">Excluir</a> </td> </tr>
+}
+
+</tbody >
+</table >
+
+<div class="text-center" >
+<a href="@Url.Action("Cadastrar")" class="btn btn-success" > Cadastrar</a >
+<a href="@Url.Action("ExportarExcel")" class="btn btn-info" > Exportar Excel</a >
+</div >
+
+
+.btn-success {
+    background-color: #4CAF50;
+    color: white;
+}
+
+.btn-success:hover {
+    background-color: #45a049;
+}
+
+
+

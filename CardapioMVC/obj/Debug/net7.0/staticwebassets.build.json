@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "NYFPnnJuq/+eaH31fLhFhdlZ/oEMaOLcg9W3gtp3oOE=",
+  "Hash": "aGWh2sX3v8cxEEuTsJ885yGk8Qp5/m43lJHvY5v3gk4=",
   "Source": "CardapioMVC",
   "BasePath": "_content/CardapioMVC",
   "Mode": "Default",
@@ -68,6 +68,23 @@
       "OriginalItemSpec": "wwwroot\\css\\bootstrap.css"
     },
     {
+      "Identity": "C:\\Users\\Frazão\\Desktop\\Projeto final\\CardapioMVC\\CardapioMVC\\wwwroot\\css\\botoes.css",
+      "SourceId": "CardapioMVC",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Frazão\\Desktop\\Projeto final\\CardapioMVC\\CardapioMVC\\wwwroot\\",
+      "BasePath": "_content/CardapioMVC",
+      "RelativePath": "css/botoes.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\botoes.css"
+    },
+    {
       "Identity": "C:\\Users\\Frazão\\Desktop\\Projeto final\\CardapioMVC\\CardapioMVC\\wwwroot\\css\\lumen.css",
       "SourceId": "CardapioMVC",
       "SourceType": "Discovered",
@@ -117,6 +134,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\favicon.ico"
+    },
+    {
+      "Identity": "C:\\Users\\Frazão\\Desktop\\Projeto final\\CardapioMVC\\CardapioMVC\\wwwroot\\img\\destaque-quanto-custa.jpg",
+      "SourceId": "CardapioMVC",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Frazão\\Desktop\\Projeto final\\CardapioMVC\\CardapioMVC\\wwwroot\\",
+      "BasePath": "_content/CardapioMVC",
+      "RelativePath": "img/destaque-quanto-custa.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\img\\destaque-quanto-custa.jpg"
     },
     {
       "Identity": "C:\\Users\\Frazão\\Desktop\\Projeto final\\CardapioMVC\\CardapioMVC\\wwwroot\\js\\site.js",

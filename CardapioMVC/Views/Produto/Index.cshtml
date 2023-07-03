@@ -1,8 +1,6 @@
 ﻿@using CardapioMVC.Controllers
 @model IEnumerable<ProdutoModel>
 
-
-
 <style>
     .btn-container {
         display: flex;
@@ -14,7 +12,7 @@
             height: 40px;
             border: none;
             border-radius: 5px;
-            background-color: #007bff;
+            background-color: navajowhite;
             color: #fff;
             cursor: pointer;
             transition: box-shadow 0.3s;
@@ -37,15 +35,12 @@
     <div class="d-flex justify-content-between align-items-center mb-5">
         <h1>Produtos</h1>
         <div class="btn-container">
-            <a class="btn-cadastrar" asp-controller="Produto" asp-action="Cadastrar">Cadastrar</a>
+            <a class="btn btn-success mx-2  " asp-controller="Produto" asp-action="Cadastrar">Cadastrar</a>
             <a class="btn-exportar" asp-controller="Produto" asp-action="ExportarExcel">Exportar</a>
         </div>
     </div>
 
-    <div class="mb-3">
-        <label for="nomePrato" class="form-label">Nome do Prato:</label>
-        <input type="text" class="form-control" id="nomePrato">
-    </div>
+    
 
     <table id="paginas" class="table table-dark table-hover">
         <thead>
@@ -99,4 +94,3 @@
         }
     }
 </script>
-
