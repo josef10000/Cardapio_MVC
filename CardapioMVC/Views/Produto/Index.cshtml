@@ -2,6 +2,19 @@
 @model IEnumerable<ProdutoModel>
 
 <style>
+    body {
+        margin: 0;
+        padding: 0;
+        height: 100vh;
+        background-image: url("/images/fundo2.jpg");
+        background-size: cover;
+        background-repeat: no-repeat;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: #ffffff;
+    }
+
     .btn-container {
         display: flex;
         gap: 10px;
@@ -13,7 +26,7 @@
             border: none;
             border-radius: 5px;
             background-color: navajowhite;
-            color: #fff;
+            color: #ffffff;
             cursor: pointer;
             transition: box-shadow 0.3s;
         }
@@ -26,8 +39,13 @@
                 background-color: #28a745;
             }
 
-    .destacado {
-        background-color: #ffcc00 !important;
+
+    input[type="number"] {
+        background-color: white;
+        color: #000000;
+        border: 1px solid white;
+        border-radius: 5px;
+        padding: 5px;
     }
 </style>
 
@@ -35,13 +53,9 @@
     <div class="d-flex justify-content-between align-items-center mb-5">
         <h1>Produtos</h1>
         <div class="btn-container">
-            <a class="btn btn-success mx-2  " asp-controller="Produto" asp-action="Cadastrar">Cadastrar</a>
-            <a class="btn-exportar" asp-controller="Produto" asp-action="ExportarExcel">Exportar</a>
+            <a class="btn btn-success mx-2" asp-controller="Produto" asp-action="Cadastrar">Cadastrar produto</a>
         </div>
     </div>
-
-    
-
     <table id="paginas" class="table table-dark table-hover">
         <thead>
             <tr>
@@ -94,3 +108,5 @@
         }
     }
 </script>
+
+

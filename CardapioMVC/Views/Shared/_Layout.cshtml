@@ -9,11 +9,7 @@
     <link rel="stylesheet" href="~/CardapioMVC.styles.css" asp-append-version="true" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
     <link href="https://cdn.datatables.net/v/dt/dt-1.13.4/datatables.min.css" rel="stylesheet" />
-    <head>
-        <link rel="stylesheet" href="styles.css">
-    </head>
-
-
+    <link rel="stylesheet" href="styles.css">
     <style>
         .sidebar {
             position: fixed;
@@ -21,21 +17,34 @@
             left: 0;
             height: 100%;
             width: 200px;
-            background-color: #f8f9fa;
             padding: 20px;
+            background-image: url("/images/teste.jpg");
+            background-size: cover;
+            background-repeat: no-repeat;
+            color: white;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
         }
 
             .sidebar .nav-link {
                 display: block;
-                margin-bottom: 10px;
+                margin-bottom: 30px;
                 transition: all 0.3s ease;
+                color: white;
+                text-align: center;
             }
 
                 .sidebar .nav-link:hover {
                     text-decoration: none;
-                    background-color: #8dd5e7;
-                    color: #fff;
+                    background-color: lightslategrey;
+                    color: white;
                     transform: scale(1.1);
+                }
+
+                .sidebar .nav-link i {
+                    color: white;
                 }
 
         .content {
@@ -46,21 +55,15 @@
 </head>
 <body>
     <div class="sidebar">
-        <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Index"> <i class="bi bi-house-fill"></i>Home</a>
-        <a class="nav-link text-dark" asp-area="" asp-controller="Produto" asp-action="Index"> <i class="bi bi-clipboard2-minus-fill"></i>Lista de Produtos</a>
-        <!--  <a class="nav-link text-dark" asp-area="" asp-controller="Prato" asp-action="Index"> <i class="bi bi-clipboard2-minus-fill"></i>Vai dar certo agora</a> -->
-        <a class="nav-link text-dark" asp-area="" asp-controller="Calorias" asp-action="Calorias"> <i class="bi bi-clipboard2-minus-fill"></i>Informações de Calorias</a>
-
-     
-
+        <a class="nav-link" asp-area="" asp-controller="Home" asp-action="Index"> <i class="bi bi-house-fill"></i>Home</a>
+        <a class="nav-link" asp-area="" asp-controller="Produto" asp-action="Index"> <i class="bi bi-clipboard2-minus-fill"></i>Lista de Produtos</a>
+        <a class="nav-link" asp-area="" asp-controller="Calorias" asp-action="Calorias"> <i class="bi bi-clipboard2-minus-fill"></i>Informações de Calorias</a>
     </div>
 
     <div class="content">
         <main role="main" class="pb-3">
             @RenderBody()
         </main>
-
-       
     </div>
 
     <script src="~/lib/jquery/dist/jquery.min.js"></script>
@@ -82,3 +85,5 @@
     @await RenderSectionAsync("Scripts", required: false)
 </body>
 </html>
+
+

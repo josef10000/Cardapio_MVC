@@ -25,6 +25,34 @@
       "PackagePath": "staticwebassets\\favicon.ico"
     },
     {
+      "Id": "C:\\Users\\Frazão\\Desktop\\Projeto final\\CardapioMVC\\CardapioMVC\\wwwroot\\images\\fundo.calorias.jpg",
+      "PackagePath": "staticwebassets\\images\\fundo.calorias.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Frazão\\Desktop\\Projeto final\\CardapioMVC\\CardapioMVC\\wwwroot\\images\\fundo2.jpg",
+      "PackagePath": "staticwebassets\\images\\fundo2.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Frazão\\Desktop\\Projeto final\\CardapioMVC\\CardapioMVC\\wwwroot\\images\\fundobarra.jpg.png",
+      "PackagePath": "staticwebassets\\images\\fundobarra.jpg.png"
+    },
+    {
+      "Id": "C:\\Users\\Frazão\\Desktop\\Projeto final\\CardapioMVC\\CardapioMVC\\wwwroot\\images\\fundohome.jpg",
+      "PackagePath": "staticwebassets\\images\\fundohome.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Frazão\\Desktop\\Projeto final\\CardapioMVC\\CardapioMVC\\wwwroot\\images\\fundosidebar.jpg",
+      "PackagePath": "staticwebassets\\images\\fundosidebar.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Frazão\\Desktop\\Projeto final\\CardapioMVC\\CardapioMVC\\wwwroot\\images\\segundasidebar.jpg",
+      "PackagePath": "staticwebassets\\images\\segundasidebar.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Frazão\\Desktop\\Projeto final\\CardapioMVC\\CardapioMVC\\wwwroot\\images\\teste.jpg",
+      "PackagePath": "staticwebassets\\images\\teste.jpg"
+    },
+    {
       "Id": "C:\\Users\\Frazão\\Desktop\\Projeto final\\CardapioMVC\\CardapioMVC\\wwwroot\\img\\destaque-quanto-custa.jpg",
       "PackagePath": "staticwebassets\\img\\destaque-quanto-custa.jpg"
     },
