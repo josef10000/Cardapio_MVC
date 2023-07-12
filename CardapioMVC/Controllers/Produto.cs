@@ -99,13 +99,11 @@ namespace CardapioMVC.Controllers
 
             if (produtos.Count == 0)
             {
-                // Aqui você pode retornar uma mensagem de erro ou redirecionar para outra página
                 return RedirectToAction("Index");
             }
 
             byte[] arquivoExcel = GerarArquivoExcel(produtos);
 
-            // Retorna o arquivo para download
             return File(arquivoExcel, "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet", "lista_produtos.xlsx");
         }
 
@@ -126,7 +124,6 @@ namespace CardapioMVC.Controllers
 
                 SheetData sheetData = worksheetPart.Worksheet.GetFirstChild<SheetData>();
 
-                // Cabeçalhos das colunas
                 Row headerRow = new Row();
                 headerRow.Append(CreateCell("ID"));
                 headerRow.Append(CreateCell("Nome"));
@@ -134,7 +131,6 @@ namespace CardapioMVC.Controllers
 
                 sheetData.AppendChild(headerRow);
 
-                // Dados dos produtos
                 foreach (var produto in listaProdutos)
                 {
                     Row dataRow = new Row();
@@ -149,13 +145,10 @@ namespace CardapioMVC.Controllers
 
                 workbookPart.Workbook.Save();
 
-                // Fecha o documento
                 spreadsheetDocument.Close();
 
-                // Volta para o início do fluxo de memória para garantir que o arquivo seja lido a partir do início
                 memStream.Position = 0;
 
-                // Lê o conteúdo do fluxo de memória e retorna como um array de bytes
                 byte[] arquivoExcel = memStream.ToArray();
 
                 return arquivoExcel;
