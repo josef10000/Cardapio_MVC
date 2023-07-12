@@ -9,7 +9,6 @@ namespace Tests_do_projeto
         [Fact]
         public async Task ObterCalorias_DeveRetornarView_CasoRespostaSejaSucesso()
         {
-            // Arrange
             string descricao = "exemplo";
             var httpClientMock = new Mock<HttpClient>();
             httpClientMock
@@ -25,9 +24,7 @@ namespace Tests_do_projeto
                 _httpClient = httpClientMock.Object
             };
 
-            // Act
-
-            // Assert
+       
             var viewResult = Assert.IsType<ViewResult>(await controller.ObterCalorias(descricao));
             Assert.Equal("Calorias", viewResult.ViewName);
         }
@@ -35,7 +32,6 @@ namespace Tests_do_projeto
         [Fact]
         public async Task ObterCalorias_DeveRetornarViewError_CasoRespostaNaoSejaSucesso()
         {
-            // Arrange
             string descricao = "exemplo";
             var httpClientMock = new Mock<HttpClient>();
             httpClientMock
@@ -48,9 +44,7 @@ namespace Tests_do_projeto
                 _httpClient = httpClientMock.Object
             };
 
-            // Act
-
-            // Assert
+          
             var viewResult = Assert.IsType<ViewResult>(await controller.ObterCalorias(descricao));
             Assert.Equal("Error", viewResult.ViewName);
         }
