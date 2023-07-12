@@ -9,7 +9,6 @@ namespace UnitTestProject1
         [TestMethod]
         public void ProdutoModel_ValidProperties_ShouldPassValidation()
         {
-            // Arrange
             var produto = new ProdutoModel
             {
                 Id = 1,
@@ -21,10 +20,8 @@ namespace UnitTestProject1
             var context = new ValidationContext(produto, null, null);
             var results = new System.Collections.Generic.List<ValidationResult>();
 
-            // Act
             var isValid = Validator.TryValidateObject(produto, context, results, true);
 
-            // Assert
             Assert.IsTrue(isValid);
             Assert.AreEqual(0, results.Count);
         }
@@ -32,16 +29,13 @@ namespace UnitTestProject1
         [TestMethod]
         public void ProdutoModel_InvalidProperties_ShouldFailValidation()
         {
-            // Arrange
             var produto = new ProdutoModelTests();
 
             var context = new ValidationContext(produto, null, null);
             var results = new System.Collections.Generic.List<ValidationResult>();
 
-            // Act
             var isValid = Validator.TryValidateObject(produto, context, results, true);
 
-            // Assert
             Assert.IsFalse(isValid);
             Assert.AreEqual(3, results.Count);
             Assert.AreEqual("Digite o nome do produto", results[0].ErrorMessage);
